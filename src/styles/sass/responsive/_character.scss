@@ -1,0 +1,73 @@
+.characters-main-container {
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 410px;
+  .bio-container {
+    .bio-info {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      span {
+        margin-bottom: 10px;
+        text-transform: capitalize;
+        color: $altButtonTextColor;
+        strong {
+          color: $mainButtonBgColor;
+        }
+      }
+    }
+  }
+  .resource-container {
+    flex-wrap: wrap;
+    max-width: 375px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media (min-width: 410px) {
+  .characters-main-container {
+    flex-wrap: wrap;
+    max-width: 600px;
+    flex-direction: row;
+    .bio-container {
+      min-width: 200px;
+      .bio-info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        span {
+          margin-bottom: 10px;
+          text-transform: capitalize;
+          color: $altButtonTextColor;
+          strong {
+            color: $mainButtonBgColor;
+          }
+        }
+      }
+    }
+
+    .resource-container {
+      flex-wrap: wrap;
+      max-width: 500px;
+      div {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        div {
+          display: flex;
+          flex-direction: row;
+          padding: 10px;
+          div {
+            width: 60px;
+            height: 60px;
+            margin-left: 5px;
+            padding: 0px;
+          }
+        }
+      }
+    }
+  }
+}
